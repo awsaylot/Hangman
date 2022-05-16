@@ -1,10 +1,10 @@
 import java.util.Arrays;
 
 public class Host {
-    static private String currentWord="hangman";
+    static public String currentWord="hangman";
     static public String guessedWord = "";
     static private final char[] man = {'O', '|', '/', '\\',  '/', '\\'};
-    static private int stage = 0;
+    static public int stage = 0;
     static private String[] board = {"HANGMAN\n", " +---+\n", "     |\n",  "     |\n",  "     |\n",  "    ===\n\n", drawBlanks() + "\n", "Missed Letters: "};
     static private String[] dictionary = {"cat", "bat", "rat", "mat"};
 
